@@ -9,8 +9,6 @@ const MainNav = ({className,...props}:React.HTMLAttributes<HTMLElement>) => {
     const pathname = usePathname();
     const params = useParams()
 
-    console.log(pathname,params)
-
     const routes = [
         {
             href:`/${params.storeId}/settings`,
