@@ -16,6 +16,8 @@ import { Separator } from "@/components/ui/separator";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import AlertModal from "@/components/modals/alert-modal";
+import ApiAlert from "@/components/ui/api-alert";
+import { useOrigin } from "@/hooks/use-origin";
 
 interface SettingsFormProps{
     initialData: Store;
@@ -31,6 +33,7 @@ const SettingsForm  = ({initialData}:SettingsFormProps) => {
 
     const router = useRouter()
     const params = useParams();
+    const origin = useOrigin();
 
     const [open,setOpen] = useState(false);
     const [loading,setLoading] = useState(false);
@@ -98,7 +101,8 @@ const SettingsForm  = ({initialData}:SettingsFormProps) => {
                 <Button type="submit" disabled={loading} className="ml-auto">Save Changes</Button>
             </form>
         </Form>
-
+        <Separator/>
+        <ApiAlert title="NEXT_PUBLIC_API_URL" description={`${origin}/api/${params.storeId}`} variant="public"/>
     </>
     
   )
