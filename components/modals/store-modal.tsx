@@ -15,7 +15,7 @@ import { toast } from 'react-hot-toast'
 
 // Setting up form validations
 const formSchema = z.object({
-    name:z.string().min(3)
+    name:z.string().min(3).max(18)
 })
 
 export const StoreModal = () => {
