@@ -61,7 +61,7 @@ export const GET = async (req:Request,{params}:{params:{storeId:string}}) => {
         return NextResponse.json(billboards)
         
     } catch (error) {
-        console.log('[BILLBOARDS_POST]',error)
+        console.log('[BILLBOARDS_GET]',error)
         return new NextResponse('Internal Error',{status:500})
     }
 }
