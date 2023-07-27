@@ -3,6 +3,11 @@ import { auth } from '@clerk/nextjs';
 
 import prismadb from '@/lib/prismadb';
 import Navbar from '@/components/navbar';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Admin Dashboard',
+}
 
 export default async function DashboardLayout({
   children,
