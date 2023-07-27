@@ -1,4 +1,4 @@
-// API Routes to handle individual billboards
+// API Routes to handle individual categories
 
 import prismadb from "@/lib/prismadb";
 import { auth } from "@clerk/nextjs"

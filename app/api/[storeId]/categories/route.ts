@@ -1,4 +1,4 @@
-// API Routes to handle billboards 
+// API Routes to handle categories 
 
 import { auth } from "@clerk/nextjs"
 import { NextResponse } from "next/server"
