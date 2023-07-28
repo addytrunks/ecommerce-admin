@@ -9,12 +9,6 @@ export const GET = async (
     {params}:{params:{categoryId:string}}
 ) => {
     try {
-        const {userId} = auth();
-
-        if(!userId){
-            return new NextResponse('Unauthenticated',{status:401})
-        }
-
         if(!params.categoryId){
             return new NextResponse('Category id is required',{status:400})
         }

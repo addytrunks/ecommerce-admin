@@ -9,12 +9,6 @@ export const GET = async (
     {params}:{params:{sizeId:string}}
 ) => {
     try {
-        const {userId} = auth();
-
-        if(!userId){
-            return new NextResponse('Unauthenticated',{status:401})
-        }
-
         if(!params.sizeId){
             return new NextResponse('Size id is required',{status:400})
         }

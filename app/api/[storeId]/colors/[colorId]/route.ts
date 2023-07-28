@@ -9,12 +9,6 @@ export const GET = async (
     {params}:{params:{colorId:string}}
 ) => {
     try {
-        const {userId} = auth();
-
-        if(!userId){
-            return new NextResponse('Unauthenticated',{status:401})
-        }
-
         if(!params.colorId){
             return new NextResponse('Color id is required',{status:400})
         }
