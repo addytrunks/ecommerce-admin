@@ -13,7 +13,7 @@ export const GET = async (
             return new NextResponse('Category id is required',{status:400})
         }
 
-        const category = await prismadb.category.findMany({
+        const category = await prismadb.category.findUnique({
             where:{
                 id:params?.categoryId,
             },

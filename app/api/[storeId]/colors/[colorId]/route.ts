@@ -13,7 +13,7 @@ export const GET = async (
             return new NextResponse('Color id is required',{status:400})
         }
 
-        const color = await prismadb.color.findMany({
+        const color = await prismadb.color.findUnique({
             where:{
                 id:params?.colorId,
             },
