@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Ecommerce Admin
+A Next-JS web app built with typescript and shadcn ui.
 
-## Getting Started
+Manage your Ecommerce store with this admin web app.
 
-First, run the development server:
+The salient features of this app are:
+  1. Dashboard(with a graph!)
+  2. CRUD Functionalities(Store,Billboard,category,color,size,products & order)
+  3. Theme Toggling(Light/Dark)
+  4. View API routes for specific entities
+  5. Clerk User authentication & authorization
+  6. Details of each entity(category,billboard...) in a user friendly way
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Important concepts that I have learnt through this project:
+  1. Typescript
+  2. React `useForm` with `zod`
+  3. Prisma(Creating Schemas, Filtering and Querying)
+  4. Clerk - authentication & authorization
+  5. Stripe integration
+  6. Fixing CORS Error when fetching from an external source
+  7. State management using `zustand`
